@@ -1,0 +1,51 @@
+/* Container for the cards */
+.parent{
+  display: flex;
+  flex-direction: column;
+  
+    background-color:black; /* Navy Blue */
+  
+  
+  
+}
+
+.card-component {
+  display: grid;                /* Use flexbox to align items horizontally */
+  grid-template-columns: repeat(3,1fr);          /* Allows wrapping to next line if cards overflow */
+  justify-content: center;      /* Center the cards horizontally */
+  align-items: flex-start;      /* Align items at the top (start) */
+ background-color: rgb(38, 38,38);
+  /* Background color */
+  padding: 20px;                /* Padding around the container */
+  min-height: 100vh;            /* Ensure the container takes the full height of the viewport */
+}
+
+/* Individual card styling */
+.job-card {
+  padding: 20px;
+  height: 13rem;                /* Adds space inside the card around the text */
+  background-color: grey;    /* Sets the background color of the card */
+  border-radius: 8px;           /* Rounds the corners of the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  /* border: 1px solid #e0e0e0;    Adds a light border around the card */ 
+  max-width: 300px;             /* Limits the card width */
+  width: 100%; 
+  margin-bottom: 3rem;                 /* Ensures the card is responsive */
+  font-family: Arial, sans-serif; /* Sets a clean font */
+}
+
+/* Text Styling */
+.job-card h3 {
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.job-card p {
+  margin-bottom: 5px;
+  cursor: default;
+}
+
+.job-card ul {
+  padding-left: 20px;
+  cursor: default;
+}

@@ -1,0 +1,114 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.company-logo{
+  
+  height: 10rem;
+}
+/* Login Container */
+.login-container {
+  height: 100vh; /* Full height of the viewport */
+  background: linear-gradient(135deg, rgb(34, 34, 34), rgb(200, 200, 200));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding for smaller screens */
+}
+
+/* Login Box */
+.login-box {
+  background-color: black; /* Black background for the login box */
+  border-radius: 15px;
+  padding: 40px;
+  width: 400px;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-box:hover {
+  transform: scale(1.05);
+}
+
+/* Login Title */
+.login-title {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  color: white; /* White text for title */
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #ddd; /* Light grey color for labels */
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #555; /* Darker grey border for inputs */
+  background-color: #222; /* Dark background for input fields */
+  color: #ddd; /* Light grey text for input fields */
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #888; /* Light grey for placeholder text */
+}
+
+.input-group input:focus {
+  border-color: #2a5298; /* Border color change on focus */
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(42, 82, 152, 0.3);
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: rgb(255, 255, 255); /* White button */
+  color: rgb(0, 0, 0); /* Black text */
+  border: 2px solid rgb(255, 255, 255); /* Border with the same color as the background */
+  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  width: 20rem;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Black shadow with 50% opacity */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: rgb(0, 0, 0); /* Change background to black on hover */
+  color: rgb(255, 255, 255); /* Change text color to white on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Increase shadow size on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-box {
+    width: 100%; /* Make login box take up full width on small screens */
+    padding: 20px;
+    
+  }
+}
